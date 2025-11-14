@@ -1,0 +1,442 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header {
+    background-color: #030718;
+    min-height: 100vh;
+}
+
+.header__top {
+    display: flex;
+    color: #FFFFFF;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+
+}
+
+.menu__list {
+    display: flex;
+    gap: 32px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.21;
+    opacity: 0.7;
+}
+.header__button{
+border: 1px solid #57E1FF;
+border-radius: 3px;
+text-transform: uppercase;
+padding: 11px 24px;
+line-height: 1.4;
+font-weight: 500;
+transition: all 0.3s ease;
+ display: inline-block;
+}
+.header__button--enter{
+    margin-right: 12px;
+    color: #57E1FF;
+}
+.header__button--register{
+    background-color: #57E1FF;
+    color: #030718;
+}
+.header__button--enter:hover {
+  background-color: #57E1FF;
+  color: #030718;
+  transform: scale(1.05);
+}
+.header__button--register:hover {
+  background-color: transparent;
+  color: #57E1FF;
+  transform: scale(1.05);
+}
+.header__info{
+    margin: 162px 0px;
+    display: flex;
+    margin-bottom: 80px;
+}
+.header__info-left{
+max-width: 630px;
+}
+.header__title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    text-transform: uppercase;
+
+}
+.header__text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #E7F7F8;
+    margin-top: 12px;
+    line-height: 1.25;
+    opacity: 0.8;
+    max-width: 565px;
+}
+
+.header__form{
+    max-width: 500px;
+    margin-top: 24px;
+   
+    display: flex;
+    align-items: center;
+  position: relative;
+  border-radius: 4px;
+ 
+}
+.header__input{
+   width: 100%;
+  padding: 20px 110px 20px 16px; /* праворуч залишаємо місце під кнопку */
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #fff;
+   text-transform: uppercase;
+  opacity: 0.5;
+  font-weight: 500;
+  background-color: #201A4F;
+    
+}
+.header__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+.header__submit {
+  position: absolute;
+  right: 4px; 
+  top: 4px;
+  bottom: 2px;
+  background-color: #57E1FF;
+  color: #030718;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 24px;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.header__submit:hover {
+  transform: scale(1.05);
+  background-color: #6fe9ff;
+}
+
+.header__info-right {
+    margin-left: 118px;
+}
+
+.digits {
+  position: relative;
+  background-color: #fff;
+  padding: 100px 0 0px;
+  margin-bottom: 61px;
+  margin-top: -60px; 
+  z-index: 2;
+   clip-path: polygon(0% 0%, 40% 0%, 43% 20%, 100% 20%, 100% 100%, 0% 100%
+  );
+}
+.digits__block {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  gap: 20px; 
+}
+
+.digits__wrapper {
+  flex: 1; 
+  text-align: center; 
+  
+  text-align: left; 
+}
+.digits__left--title{
+font-size: 44px;
+line-height: 1.2;
+color: #000000;
+font-weight: 700;
+margin-bottom: 4px;
+text-transform: uppercase;
+letter-spacing: -0.04em;
+}
+.digits__left--month{
+color: #000000;
+opacity: 0.5;
+font-size: 14px;
+line-height: 1.2;
+font-weight: 400;
+}
+.digits__right--title{
+font-weight: 400;
+font-size: 14px;
+color: #000000;
+opacity: 0.7;
+margin-bottom: 8px;
+text-transform: uppercase;
+line-height: 1.4;
+}
+.digits__right--numbers{
+    font-size: 60px;
+    font-weight: 500;
+color: #6A54FF;
+text-transform: uppercase;
+line-height: 1.4;
+}
+.digits__right--title,
+.digits__right--numbers {
+  display: block; 
+  margin: 0; 
+}
+.agreements__swiper{
+    overflow: visible;
+    width: 100%;
+     padding-bottom: 40px;
+}
+.agreements{
+    background-color: #030718;
+    padding-top: 96px;
+   
+    padding-bottom: 140px;
+   
+}
+.online{
+    font-size: 14px;
+    color: #35FF9E;
+    font-weight: 400;
+    margin-top: 4px;
+    margin-bottom: 72px;
+    line-height: 1.4;
+    position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+.online::before {
+  content: "";
+  display: inline-block;
+  width: 7px;      
+  height: 7px;
+  border-radius: 50%;
+  background-color: #35FF9E; 
+  margin-right: 8px;        
+}
+.agreements__title{
+    font-size: 44px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #FFFFFF;
+    
+}
+.agreements__item{
+    background: #6A54FF;
+    padding: 16px 16px 13px 16px;
+    border-radius: 4px;
+    max-width: 300px;
+    position: relative;
+    clip-path: polygon(0 0,84% 0, 100% 14%, 100% 100%, 0 100%);
+}
+.agreements__item::before{
+    content: "";
+    position: absolute;
+ z-index: 8;
+     top: -25%;
+    right: -45%;    /* зсув вправо за межі блока */
+    width: 100%;    /* ширина псевдоелемента */
+    height: 100%; 
+   background-image: url("/images/color.svg");
+   background-repeat: no-repeat;
+   background-size: 88%;
+   
+}
+.agreements__item--title {
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 2px;
+}
+.agreements__item--desc {
+    font-size: 14px;
+    font-weight: 400;
+     color: #FFFFFF;
+     opacity: 0.6;
+     line-height: 1.3;
+     margin-bottom: 48px;  
+}
+.agreements__item--profit {
+    font-size: 14px;
+    font-weight: 500;
+     color: #FFFFFF;
+     text-transform: uppercase;
+     opacity: 0.5;
+     line-height: 1.3;
+     margin-bottom: 2px;  
+}
+.agreements__item--digit {
+    color: #35FF9E;
+    font-size: 28px;
+    line-height: 1.3;
+    font-weight: 500;
+    margin-bottom: 9px;
+}
+.agreements__item--wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+.agreements__item--goal {
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+     line-height: 1.3;
+      opacity: 0.5;
+}
+.agreements__item--date {
+     font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+     line-height: 1.3;
+     opacity: 0.6;
+}
+/* .agreements .swiper-scrollbar {
+  background: rgba(255, 255, 255, 0.1); 
+ 
+  height: 6px; 
+} */
+ .agreements .swiper-scrollbar {
+  position: absolute;
+  bottom: 0; /* розміщуємо скролбар під слайдами */
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.agreements .swiper-scrollbar-drag {
+  background: #6073A1;
+  border-radius: 3px;
+}
+.about{
+    position: relative;
+  background-color: #fff;
+  padding: 100px 0 0px;
+  margin-bottom: 61px;
+  margin-top: -60px; 
+  z-index: 2;
+   clip-path: polygon(0% 0%, 40% 0%, 43% 20%, 100% 20%, 100% 100%, 0% 100%
+  );
+}
+.about__wrapper{
+    display: flex;
+    justify-content: space-between; 
+  align-items: flex-start;
+  gap: 20px; 
+  padding-top: 55px;
+}
+.about__company{
+    flex: 1;
+    max-width: 415px;
+}
+.about__company--title{
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.about__company--text{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.2;
+}
+.about__company--text:first-of-type {
+  margin-bottom: 35px;
+}
+.about__free{
+    max-width: 630px;
+    background-color: #6A54FF;
+    align-items: center;
+    text-align: center;
+    padding:65px ;
+    margin: 0 auto;
+     border-radius: 8px; /* (опціонально — щоб виглядало акуратніше) */
+  display: flex;
+  flex-direction: column;
+}
+.form-title{
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 26px;
+    line-height: 1.2;
+   
+}
+.about__form{
+ max-width: 500px;
+    margin-top: 24px;
+  
+    display: flex;
+    align-items: center;
+  position: relative;
+  border-radius: 4px;
+}
+.about__input{
+width: 100%;
+  padding: 20px 110px 20px 16px; /* праворуч залишаємо місце під кнопку */
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #fff;
+   text-transform: uppercase;
+  opacity: 0.5;
+  font-weight: 500;
+  background-color: #201A4F;
+}
+.about__submit{
+ position: absolute;
+  right: 4px; 
+  top: 4px;
+  bottom: 2px;
+  background-color: #57E1FF;
+  color: #030718;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 24px;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
