@@ -1,246 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Trade Blade</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="header__top">
-                <a href="#"><img class="logo-img" alt="logo" src="./images/logo.svg"></a>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="" class="menu__link">Цифры</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__link">Сделки онлайн</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__link">Цифры</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__link">о компании</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__link">как начать</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__link">тарифы</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__link">отзывы</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__link">FAQ</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header__buttons">
-                    <a href="#" class="header__button header__button--enter">Вход</a>
-                    <a href="#" class="header__button header__button--register">Регистрация</a>
-                </div>
-            </div>
-            <div class="header__info">
-                <div class="header__info-left">
-                    <h1 class="header__title">моментально Копируй сделки профи трейдеров</h1>
-                    <p class="header__text">Начни копировать сделки с успешной командой профессиональных трейдеров в
-                        автоматическом режиме.</p>
-                    <form class="header__form">
-                        <input type="text" class="header__input" placeholder="Ваш e–mail">
-                        <button class="header__submit">Начать</button>
-                    </form>
-                    <p class="header__note">5 дней бесплатного пользования</p>
-                </div>
+      <div class="container">
+        <div class="header__top">
+          <a href="#"
+            ><img class="logo-img" src="./images/logo.svg" alt="logo"
+          /></a>
 
-                <div class="header__info-right">
-                    <img src="./images/info.png" alt="">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="" class="menu__link">Цифры</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Сделки онлайн</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">о компании</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">как начать</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">тарифы</a>
+              </li>
+              <li class="menu__item"><a href="" class="menu__link">FAQ</a></li>
+            </ul>
+          </nav>
 
-                </div>
-            </div>
+          <div class="header__buttons">
+            <a href="#" class="header__button header__button--enter">Вход</a>
+            <a href="#" class="header__button header__button--register"
+              >Регистрация</a
+            >
+          </div>
+
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
+
+        <div class="mobile-menu">
+          <ul class="mobile-menu__list">
+            <li><a href="#">Цифры</a></li>
+            <li><a href="#">Сделки онлайн</a></li>
+            <li><a href="#">о компании</a></li>
+            <li><a href="#">как начать</a></li>
+            <li><a href="#">тарифы</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="header__info">
+          <div class="header__info-left">
+            <h1 class="header__title">
+              моментально Копируй сделки профи трейдеров
+            </h1>
+            <p class="header__text">
+              Начни копировать сделки с успешной командой профессиональных
+              трейдеров в автоматическом режиме.
+            </p>
+            <form class="header__form">
+              <input
+                type="text"
+                class="header__input"
+                placeholder="Ваш e–mail"
+              />
+              <button class="header__submit">Начать</button>
+            </form>
+            <p class="header__note">5 дней бесплатного пользования</p>
+          </div>
+          <div class="header__info-right">
+            <img src="./images/info.png" alt="" />
+          </div>
+        </div>
+      </div>
     </header>
+
     <section class="digits">
-        <div class="container">
-            <div class="digits__block">
+      <div class="container">
+        <div class="digits__block">
+          <div class="digits__wrapper digits__wrapper--left block1">
+            <p class="digits__left--title">Цифры</p>
+            <p class="digits__left--month">Сентябрь 2022</p>
+          </div>
 
-                <div class="digits__wrapper digits__wrapper--left">
-                    <p class="digits__left--title">Цифры</p>
-                    <p class="digits__left--month">Сентябрь 2022</p>
-                </div>
+          <div class="digits__wrapper digits__wrapper--right block2">
+            <p class="digits__right--title">Торговой прибыли</p>
+            <p class="digits__right--numbers">2756%</p>
+          </div>
 
-                <div class="digits__wrapper digits__wrapper--right">
-                    <p class="digits__right--title">Торговой прибыли</p>
-                    <p class="digits__right--numbers">2756%</p>
-                </div>
+          <div class="digits__wrapper digits__wrapper--right block3">
+            <p class="digits__right--title">Фьючерсных и спотовых сделок</p>
+            <p class="digits__right--numbers">67</p>
+          </div>
 
-                <div class="digits__wrapper digits__wrapper--right">
-                    <p class="digits__right--title">Фьючерсных и спотовых сделок</p>
-                    <p class="digits__right--numbers">67</p>
-                </div>
-
-                <div class="digits__wrapper digits__wrapper--right">
-                    <p class="digits__right--title">Прибыль подписчиков</p>
-                    <p class="digits__right--numbers">375000</p>
-                </div>
-
-            </div>
+          <div class="digits__wrapper digits__wrapper--right block4">
+            <p class="digits__right--title">Прибыль подписчиков</p>
+            <p class="digits__right--numbers">375000</p>
+          </div>
         </div>
+      </div>
     </section>
     <section class="agreements">
-        <div class="container">
-            <h2 class="agreements__title">Прошедшие сделки</h2>
-            <p class="online">Онлайн</p>
+      <div class="container">
+        <h2 class="agreements__title">Прошедшие сделки</h2>
+        <p class="online">Онлайн</p>
 
-
-            <div class="agreements__swiper swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <div class="agreements__item">
-                            <h3 class="agreements__item--title">NEAR/USDT</h3>
-                            <p class="agreements__item--desc">SPOT · 1 мин. назад</p>
-                            <p class="agreements__item--profit">Прибыль</p>
-                            <p class="agreements__item--digit">58.6206% <img src="./images/arrow.png"> </p>
-                            <div class="agreements__item--wrapper">
-                                <p class="agreements__item--goal">Цель 4</p>
-                                <p class="agreements__item--date">Дата входа 06.10.2022</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="agreements__item">
-                            <h3 class="agreements__item--title">BTC/USDT</h3>
-                            <p class="agreements__item--desc">SPOT · 1 мин. назад</p>
-                            <p class="agreements__item--profit">Прибыль</p>
-                            <p class="agreements__item--digit">58.6206% <img src="./images/arrow.png"> </p>
-                            <div class="agreements__item--wrapper">
-                                <p class="agreements__item--goal">Цель 4</p>
-                                <p class="agreements__item--date">Дата входа 06.10.2022</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="agreements__item">
-                            <h3 class="agreements__item--title">ETH/USDT</h3>
-                            <p class="agreements__item--desc">SPOT · 1 мин. назад</p>
-                            <p class="agreements__item--profit">Прибыль</p>
-                            <p class="agreements__item--digit">58.6206% <img src="./images/arrow.png"> </p>
-                            <div class="agreements__item--wrapper">
-                                <p class="agreements__item--goal">Цель 4</p>
-                                <p class="agreements__item--date">Дата входа 06.10.2022</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="agreements__item">
-                            <h3 class="agreements__item--title">ETH/USDT</h3>
-                            <p class="agreements__item--desc">SPOT · 1 мин. назад</p>
-                            <p class="agreements__item--profit">Прибыль</p>
-                            <p class="agreements__item--digit">58.6206% <img src="./images/arrow.png"> </p>
-                            <div class="agreements__item--wrapper">
-                                <p class="agreements__item--goal">Цель 4</p>
-                                <p class="agreements__item--date">Дата входа 06.10.2022</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="agreements__item">
-                            <h3 class="agreements__item--title">ETH/USDT</h3>
-                            <p class="agreements__item--desc">SPOT · 1 мин. назад</p>
-                            <p class="agreements__item--profit">Прибыль</p>
-                            <p class="agreements__item--digit">58.6206% <img src="./images/arrow.png"> </p>
-                            <div class="agreements__item--wrapper">
-                                <p class="agreements__item--goal">Цель 4</p>
-                                <p class="agreements__item--date">Дата входа 06.10.2022</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="agreements__item">
-                            <h3 class="agreements__item--title">ETH/USDT</h3>
-                            <p class="agreements__item--desc">SPOT · 1 мин. назад</p>
-                            <p class="agreements__item--profit">Прибыль</p>
-                            <p class="agreements__item--digit">58.6206% <img src="./images/arrow.png"> </p>
-                            <div class="agreements__item--wrapper">
-                                <p class="agreements__item--goal">Цель 4</p>
-                                <p class="agreements__item--date">Дата входа 06.10.2022</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-                    <div class="swiper-slide">
-                        <div class="agreements__item">
-                            <h3 class="agreements__item--title">NEAR/USDT</h3>
-                            <p class="agreements__item--desc">SPOT · 1 мин. назад</p>
-                            <p class="agreements__item--profit">Прибыль</p>
-                            <p class="agreements__item--digit">58.6206% <img src="./images/arrow.png"> </p>
-                            <div class="agreements__item--wrapper">
-                                <p class="agreements__item--goal">Цель 4</p>
-                                <p class="agreements__item--date">Дата входа 06.10.2022</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    ...
+        <div class="agreements__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="agreements__item">
+                <h3 class="agreements__item--title">NEAR/USDT</h3>
+                <p class="agreements__item--desc">SPOT · 1 мин. назад</p>
+                <p class="agreements__item--profit">Прибыль</p>
+                <p class="agreements__item--digit">
+                  58.6206% <img src="./images/arrow.png" />
+                </p>
+                <div class="agreements__item--wrapper">
+                  <p class="agreements__item--goal">Цель 4</p>
+                  <p class="agreements__item--date">Дата входа 06.10.2022</p>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
+              </div>
             </div>
+            <div class="swiper-slide">
+              <div class="agreements__item">
+                <h3 class="agreements__item--title">BTC/USDT</h3>
+                <p class="agreements__item--desc">SPOT · 1 мин. назад</p>
+                <p class="agreements__item--profit">Прибыль</p>
+                <p class="agreements__item--digit">
+                  6.02% <img src="./images/arrow.png" />
+                </p>
+                <div class="agreements__item--wrapper">
+                  <p class="agreements__item--goal">Цель 3</p>
+                  <p class="agreements__item--date">Дата входа 06.10.2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="agreements__item">
+                <h3 class="agreements__item--title">ETH/USDT</h3>
+                <p class="agreements__item--desc">SPOT · 1 мин. назад</p>
+                <p class="agreements__item--profit">Прибыль</p>
+                <p class="agreements__item--digit">
+                  16.3% <img src="./images/arrow.png" />
+                </p>
+                <div class="agreements__item--wrapper">
+                  <p class="agreements__item--goal">Цель 4</p>
+                  <p class="agreements__item--date">Дата входа 06.10.2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="agreements__item">
+                <h3 class="agreements__item--title">NEAR/USDT</h3>
+                <p class="agreements__item--desc">SPOT · 1 мин. назад</p>
+                <p class="agreements__item--profit">Прибыль</p>
+                <p class="agreements__item--digit">
+                  0.963%<img src="./images/arrow.png" />
+                </p>
+                <div class="agreements__item--wrapper">
+                  <p class="agreements__item--goal">Цель 4</p>
+                  <p class="agreements__item--date">Дата входа 06.10.2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="agreements__item">
+                <h3 class="agreements__item--title">ETH/USDT</h3>
+                <p class="agreements__item--desc">SPOT · 1 мин. назад</p>
+                <p class="agreements__item--profit">Прибыль</p>
+                <p class="agreements__item--digit">
+                  58.6206% <img src="./images/arrow.png" />
+                </p>
+                <div class="agreements__item--wrapper">
+                  <p class="agreements__item--goal">Цель 4</p>
+                  <p class="agreements__item--date">Дата входа 06.10.2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="agreements__item">
+                <h3 class="agreements__item--title">ETH/USDT</h3>
+                <p class="agreements__item--desc">SPOT · 1 мин. назад</p>
+                <p class="agreements__item--profit">Прибыль</p>
+                <p class="agreements__item--digit">
+                  58.6206% <img src="./images/arrow.png" />
+                </p>
+                <div class="agreements__item--wrapper">
+                  <p class="agreements__item--goal">Цель 4</p>
+                  <p class="agreements__item--date">Дата входа 06.10.2022</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="agreements__item">
+                <h3 class="agreements__item--title">NEAR/USDT</h3>
+                <p class="agreements__item--desc">SPOT · 1 мин. назад</p>
+                <p class="agreements__item--profit">Прибыль</p>
+                <p class="agreements__item--digit">
+                  58.6206% <img src="./images/arrow.png" />
+                </p>
+                <div class="agreements__item--wrapper">
+                  <p class="agreements__item--goal">Цель 4</p>
+                  <p class="agreements__item--date">Дата входа 06.10.2022</p>
+                </div>
+              </div>
+            </div>
+
+            ...
+          </div>
+
+          <div class="swiper-scrollbar"></div>
         </div>
+      </div>
     </section>
     <section class="about">
-        <div class="container">
-            <div class="about__wrapper">
-                <div class="about__company">
-                    <h2 class="about__company--title">О компании</h2>
-                    <p class="about__company--text">Мы опытная команда, для которой трейдинг – профессия. TradeBlade
-                        является авторизованным официальным брокером биржи Binance. </p>
-                    <p class="about__company--text">Он представляет пользователям множество преимуществ, таких как более
-                        високая скорость синхронизации API и возможность создать учетную запись Binance через платформу
-                        TradeBlade всего в 1 клик.</p>
-                </div>
-                <div class="about__free">
-                    <h3 class="form-title">Попробуйте сейчас и получите<br/> 5 дней бесплатного пользования</h3>
-                    <form class="about__form">
-                        
-                        <input type="text" class="about__input" placeholder="Ваш e–mail">
-                        <button class="about__submit">попробовать</button>
-                    </form>
-                </div>
-            </div>
+      <div class="container">
+        <div class="about__wrapper">
+          <div class="about__company">
+            <h2 class="about__company--title">О компании</h2>
+            <p class="about__company--text">
+              Мы опытная команда, для которой трейдинг – профессия. TradeBlade
+              является авторизованным официальным брокером биржи Binance.
+            </p>
+            <p class="about__company--text">
+              Он представляет пользователям множество преимуществ, таких как
+              более високая скорость синхронизации API и возможность создать
+              учетную запись Binance через платформу TradeBlade всего в 1 клик.
+            </p>
+          </div>
+          <div class="about__free">
+            <h3 class="form-title">
+              Попробуйте сейчас и получите<br />
+              5 дней бесплатного пользования
+            </h3>
+            <form class="about__form">
+              <input
+                type="text"
+                class="about__input"
+                placeholder="Ваш e–mail"
+              />
+              <button class="about__submit">попробовать</button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
+    <section class="tariffs">
+      <div class="tariffs__wrap">
+        <div class="container">
+          <h3 class="tariffs__title">тарифы</h3>
+
+          <div class="tariffs__tabs">
+            <button class="tab active">СПОТ</button>
+            <button class="tab">фьючерс</button>
+          </div>
+
+          <div class="tariffs__cards">
+            <div class="tariff-card standard">
+              <h2 class="card__title">STANDART</h2>
+              <ul class="card__list">
+                <li>Ручной трейдинг</li>
+                <li>
+                  Автоматическое или полуавтоматическое копирование сделок
+                </li>
+                <li>Личный кабинет со статистикой</li>
+                <li>Среднесрочные сделки</li>
+              </ul>
+              <div class="card__bottom">
+                <div class="card__price">
+                  <p class="price">$234</p>
+                  <select class="card__select">
+                    <option>12 месяцев</option>
+                    <option>6 месяцев</option>
+                    <option>3 месяцa</option>
+                    <option>1 месяц</option>
+                  </select>
+                </div>
+                <button class="card__try">
+                  ПОПРОБОВАТЬ
+                  <span>5 дней бесплатно</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="tariff-card vip">
+              <h2 class="card__title">VIP</h2>
+              <ul class="card__list">
+                <li>Ручной трейдинг</li>
+                <li>Автоматическое копирование сделок</li>
+                <li>Личный кабинет со статистикой</li>
+                <li>Краткосрочные, среднесрочные и инвест сделки</li>
+
+                <li>Доступ в Vip чат с командой</li>
+                <li>Наш авторский курс по трейдингу</li>
+              </ul>
+              <div class="card__bottom">
+                <div class="card__price">
+                  <p class="price">$585</p>
+                  <select class="card__select">
+                    <option>12 месяцев</option>
+                    <option>6 месяцев</option>
+                    <option>3 месяца</option>
+                    <option>1 месяц</option>
+                  </select>
+                </div>
+                <button class="card__try">
+                  ПОПРОБОВАТЬ
+                  <span>5 дней бесплатно</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="question">
+      <div class="container">
+        <div class="question__wrapper">
+          <h2 class="question__title">часто задаваемые вопросы</h2>
+          <div class="question__block">
+            <ul class="block__items">
+              <li class="block__item active__item">
+                <h4 class="block__title">
+                  Что такое TradeBlade <span class="arrow"></span>
+                </h4>
+                <p class="block__text">
+                  Мы опытная команда, для которой трейдинг – профессия.
+                  TradeBlade является авторизованным официальным брокером биржи
+                  Binance.
+                </p>
+                <p class="block__text">
+                  Он представляет пользователям множество преимуществ, таких как
+                  более високая скорость синхронизации API и возможность создать
+                  учетную запись Binance через платформу TradeBlade всего в 1
+                  клик.
+                </p>
+              </li>
+              <li class="block__item">
+                <h4 class="block__title">
+                  Что TradeBlade предлагает инвесторам
+                  <span class="arrow"></span>
+                </h4>
+                <p class="block__text">
+                  Мы опытная команда, для которой трейдинг – профессия.
+                  TradeBlade является авторизованным официальным брокером биржи
+                  Binance.
+                </p>
+                <p class="block__text">
+                  Он представляет пользователям множество преимуществ, таких как
+                  более високая скорость синхронизации API и возможность создать
+                  учетную запись Binance через платформу TradeBlade всего в 1
+                  клик.
+                </p>
+              </li>
+              <li class="block__item">
+                <h4 class="block__title">
+                  Должен ли я перевести свои средства на TradeBlade
+                  <span class="arrow"></span>
+                </h4>
+                <p class="block__text">
+                  Мы опытная команда, для которой трейдинг – профессия.
+                  TradeBlade является авторизованным официальным брокером биржи
+                  Binance.
+                </p>
+                <p class="block__text">
+                  Он представляет пользователям множество преимуществ, таких как
+                  более високая скорость синхронизации API и возможность создать
+                  учетную запись Binance через платформу TradeBlade всего в 1
+                  клик.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper wrapper grid-footer">
+          <div class="footer__top grid-footer__top">
+            <p class="footer__navigation">Быстрая навигация</p>
+            <img class="footer__logo" src="./images/logo.svg" alt="" />
+          </div>
+          <div class="footer__bottom">
+            <nav class="menu__bottom">
+              <ul>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Цифры</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Сделки онлайн</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">о компании</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">tradeblad это</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">тарифы</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">FAQ</a>
+                </li>
+              </ul>
+            </nav>
+            <p class="rights">© 2022 TradeBlade. All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
-</body>
-
+  </body>
 </html>
