@@ -37,10 +37,34 @@ items.forEach(item => {
 });
 
 
-const burger = document.querySelector('.burger');
-const mobileMenu = document.querySelector('.mobile-menu');
+// document.addEventListener('DOMContentLoaded', () => {
+//   const burger = document.querySelector('.burger');
+//   const mobileMenu = document.querySelector('.mobile__menu');
 
-burger.addEventListener('click', () => {
-  mobileMenu.classList.toggle('active');
+//   burger.addEventListener('click', () => {
+//     mobileMenu.classList.toggle('active');
+//     burger.classList.toggle('active'); // якщо хочеш анімацію бургеру
+//   });
+// });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.querySelector('.burger');
+  const mobileMenu = document.querySelector('.mobile__menu');
+  const menuLinks = mobileMenu.querySelectorAll('a'); // всі посилання і кнопки в меню
+
+  if (burger && mobileMenu) {
+    // відкриття / закриття меню при кліку на бургер
+    burger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+      burger.classList.toggle('active'); // анімація бургеру
+    });
+
+    // закриття меню при кліку на будь-яке посилання або кнопку всередині меню
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        burger.classList.remove('active');
+      });
+    });
+  }
 });
-

@@ -78,7 +78,9 @@ table {
     border-collapse:collapse;
     border-spacing:0;
 }
-
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 /* change border colour to suit your needs */
 hr {
     display:block;
