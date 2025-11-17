@@ -1,8 +1,6 @@
 const swiper = new Swiper('.agreements__swiper', { 
   
-  loop: true,
-
-    
+  loop: true,    
   spaceBetween: 20,
   
    breakpoints: {
@@ -37,29 +35,19 @@ items.forEach(item => {
 });
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const burger = document.querySelector('.burger');
-//   const mobileMenu = document.querySelector('.mobile__menu');
 
-//   burger.addEventListener('click', () => {
-//     mobileMenu.classList.toggle('active');
-//     burger.classList.toggle('active'); // якщо хочеш анімацію бургеру
-//   });
-// });
 
 document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.burger');
   const mobileMenu = document.querySelector('.mobile__menu');
-  const menuLinks = mobileMenu.querySelectorAll('a'); // всі посилання і кнопки в меню
+  const menuLinks = mobileMenu.querySelectorAll('a');
 
   if (burger && mobileMenu) {
-    // відкриття / закриття меню при кліку на бургер
     burger.addEventListener('click', () => {
       mobileMenu.classList.toggle('active');
-      burger.classList.toggle('active'); // анімація бургеру
+      burger.classList.toggle('active'); 
     });
 
-    // закриття меню при кліку на будь-яке посилання або кнопку всередині меню
     menuLinks.forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.remove('active');
