@@ -84,7 +84,8 @@ a {
 .header__info {
   margin: 162px 0px;
   display: flex;
-  margin-bottom: 80px;
+ 
+  padding-bottom: 50px;
 }
 
 .header__info-left {
