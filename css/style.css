@@ -82,10 +82,8 @@ a {
 }
 
 .header__info {
-  margin: 162px 0px;
-  display: flex;
- 
-  padding-bottom: 50px;
+  margin: 62px 0px;
+  display: flex; 
 }
 
 .header__info-left {
